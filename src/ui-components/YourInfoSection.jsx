@@ -68,19 +68,19 @@ function YourInfoSection ({ setStep }) {
             <div className="user-info-form step-content">
                 <div ref={nameWrapperRef} className="input-wrapper">
                     <label htmlFor="nameID">Name</label>
-                    <input placeholder="e.g. Taylor Swift" className="info-input" ref={nameRef} id="nameID" type="text" onChange={(e) => setUser((prevUser) => {
+                    <input placeholder="e.g. Stephen King" className="info-input" ref={nameRef} id="nameID" type="text" onChange={(e) => setUser((prevUser) => {
 	                return {...prevUser, name: e.target.value}
                     })}/>
                 </div>
                 <div ref={emailWrapperRef} className="input-wrapper">
                     <label htmlFor="emailID">Email Address</label>
-                    <input placeholder="e.g. musicindustry13@dictator.ts" className="info-input" ref={emailRef} id="emailID" type="email" onChange={(e) => setUser((prevUser) => {
+                    <input placeholder="e.g. stephenking@lorem.com" className="info-input" ref={emailRef} id="emailID" type="email" onChange={(e) => setUser((prevUser) => {
 	                return {...prevUser, email: e.target.value}
                     })} />
                 </div>
                 <div ref={numberWrapperRef} className="input-wrapper">
                     <label htmlFor="numberID">Phone Number</label>
-                    <input placeholder="e.g. 13 12 1989" className="info-input" ref={numberRef} id="numberID" type="number" onChange={(e) => 
+                    <input placeholder="e.g. +1 234 567 890" className="info-input" ref={numberRef} id="numberID" type="number" onChange={(e) => 
                     setUser((prevUser) => {
 	                return {...prevUser, number: e.target.value}
                     })}/>
